@@ -1,0 +1,15 @@
+# Boxstarter options
+$Boxstarter.RebootOk=$false # Allow reboots?
+
+
+# Install Visual C++ 2015 Redistributable
+cinst vcredist2015
+
+# Create Directory "C:\Temp\BoxStarterDownloads"
+MD "C:\Temp"
+MD "C:\Temp\BoxStarterDownloads"
+
+
+# Install 3CX v15 SoftPhone
+wget "http://downloads.3cx.com/downloads/3CXPhoneforWindows15.msi" -UseBasicParsing -OutFile "C:\Temp\BoxStarterDownloads\3CXPhoneforWindows15.msi"
+C:\Temp\BoxStarterDownloads\3CXPhoneforWindows15.msi /qn
