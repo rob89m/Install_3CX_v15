@@ -2,7 +2,8 @@
 $Boxstarter.RebootOk=$false # Allow reboots?
 
 
-# Install Visual C++ 2015 Redistributable
+# Install Visual C++ Redistributable
+cinst vcredist2010
 cinst vcredist2015
 
 # Create Directory "C:\Temp\BoxStarterDownloads"
